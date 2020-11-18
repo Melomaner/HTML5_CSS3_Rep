@@ -1,0 +1,148 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    width: 1280px;
+    margin: 0 auto;
+    /* border: 3px solid red; */
+    box-sizing: border-box;
+    font-family: arial;
+    background-color: #ccc;
+}
+.padding-size{
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.main-header{
+    width: 100%;
+    background-color: #445161;
+    color: #fff;
+}
+
+.main-header:after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.main-header-wrp{
+    /* border: 1px solid red; */
+    float: left;
+}
+
+.main-header-title{
+    margin: 0 0 40px 0;
+    font-size: 60;
+    display: block;
+}
+
+.main-header-list{
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-size: 20;
+}
+
+.main-header-list-item{
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.main-header-list-item:last-child{
+    margin-bottom: 0;
+}
+
+.main-header-list-item:before{
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    /* border: 1px solid #fff; */
+    position: absolute;
+    top: 3px;
+    left: -20px;
+    background-image: url(https://e7.pngegg.com/pngimages/617/595/png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png);
+    background-size: cover;
+
+}
+
+.main-header-img{
+    width: 470px;
+    min-height: 215px;
+    float: right;
+    display: block;
+    background-color: #fff;
+    color: #000;
+}
+
+.content{
+
+}
+
+.about-product{
+    min-height: 340px;
+}
+
+.about-product-text{
+    max-width: 650px;
+    font-size: 16;
+    float: left;
+}
+
+.about-product-text-title{
+    font-size: 30;
+}
+
+.about-product-video{
+    width: 400px;
+    min-height: 250px;
+    float: right;
+    display: block;
+    background-color: #445161;
+    color: #fff;
+}
+
+.pluses-product{
+    min-height: 400px;
+}
+
+.pluses-product-title{
+    font-size: 30;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+
+.pluses-product-details{
+    width: 50%;
+    float: left;
+    margin-bottom: 35px;
+    font-size: 16;
+
+}
+
+.pluses-product-summary{
+    position: relative;
+    height: 30px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.pluses-product-summary:before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #fff; */
+    position: absolute;
+    top: -1;
+    left: -1;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8BAAIAAABGRUa0tLT7+/vf398KCQvAwMDt7e2MjI3Hx8f39/efn5+mpqZcXF0ZGBkzMzQlJSa5ubrm5uZ/f395eXlVVVY/Pj9jY2SVlZYdHB2FhYZ1dXYqKirU1NRPT09sbGwRERJsDo7uAAADoElEQVR4nO3d63KiQBSFUWwuKiKIGm+J0cz7P+Q0auIdOtJD7z6zv39JVcpeBSIG6hAE3TXPF8uyP1mt00HW4ct21TBdqYvWM9cLsly8qVi9n/QP4cj1omw2uuJ9G5dy9tXxPfBgfE9cr8xSi0e+o3Hgem1WegqsiBK2Yv4cWBGHrtfXulEdUBPD2PUK27aqBeqNmLteYcui+k1YEf3eiHG/AaiJH64X2aqoEag3outFtqowEfp8+hY3vQsPxK3rZbZoYCT89PhYMzYA6t107nqdr/dmJvT41M3gQFMJd67X+XqhibCnPP6+byiMXK/z9SikED8KKcSPQgrxo5BC/CikED8KKcSPQgrxo5BC/CikED8KKcSPQgrxo5BC/CikED8KKcSPQgrxo5BC/CikED8KKcSPQgrxo5BC/CikED8KKcSPQgrxo/C/EXY5cSAejN+K0Fp/zISltRfcf6VRzQyKOCqU5UyAhwmDNpukT0aJRH3zNSFXKbYPBsKMVhJ0p7QxvQXmIjbfOaWKa2DNbENPU6ocigb2qkP0eT7qWCJQE9c/BxmZQL2jbk4fg0KB5yliG7HC07C7oVzgaVBaKheoiYugcYSq36lpEMwF76TH3TSXDNTEXJ/OuF7EP00fTZfChcugFC4sg+ZRxl6n+sFEuHAi++NQC1fBWriwkH3SdpiHPhAunAWZ8LO2LJD9RlR7/d1iJngjnp4tYXb5xMvUNJP8j6iLx4OIPfmuvv8eyt5lEi/G2Sci91N1eW3Z6CkNnqWuH++SCLv0VAHH1xefhqEoot5gdzcHxLmMK8C940Xg9aOngsQfv7r4jtlRUD69W2G0/bR708BvlmWpfjiufeZJPE92s8hSM7N/c6k3a6842CXdPqoO8I4hy/GuLwrxo5BC/CikED8KKcSPQgrxo5BC/CikED8KKcSPQgrxo5BC/CikED8KKcSPQgrxo5BC/CikED8KKcSPQgrxo5BC/CikED8KKcSPQgrxo5BC/CikED8KKcRvbyYcuF7n632ZCJWqeaoIekZDGS/GOflXZCTsdzusw2o7k/ktKnS9zDYZTLi9G+jkVwZvRK/fhkaT4FTpepHt2jYJvf6sqGoc239+VIqvpfXE78eI+FxRJ3wwOM7DagZ+ef5J8d2wfLaj3gxv9Lds/ZColM9fm27a3I/f07+Zev1Rf9N8ez1jsPLlrhdluWQxvZxuuM+z5r/xriTfLsv+ZFV8zDrk/QXZMFTGDmDZyQAAAABJRU5ErkJggg==);
+    background-size: cover;
+
+}
